@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - bf42plusplus
     paths-ignore:
       - '**/README.md'
       - '.github/workflows/windows-build-clang.yml'
@@ -12,7 +13,6 @@ on:
   pull_request:
     branches:
       - main
-      - bf42plusplus
 
 jobs:
   build-msvc:
