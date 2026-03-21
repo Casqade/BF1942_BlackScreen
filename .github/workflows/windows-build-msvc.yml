@@ -12,6 +12,7 @@ on:
   pull_request:
     branches:
       - main
+      - bf42plusplus
 
 jobs:
   build-msvc:
