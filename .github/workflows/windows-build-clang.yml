@@ -31,14 +31,14 @@ jobs:
             cc: "clang-cl",
             cxx: "clang-cl",
             arch: "x32",
-            cmake-arch-args: "-T host=x86 -A Win32"
+            cmake-arch-args: "-T host=x86"
           }
         - {
             os: windows-latest,
             cc: "clang",
             cxx: "clang++",
             arch: "x32",
-            cmake-arch-args: "-T host=x86 -A Win32"
+            cmake-arch-args: "-T host=x86"
           }
         - {
             os: windows-latest,
