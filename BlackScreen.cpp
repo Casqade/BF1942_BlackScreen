@@ -201,7 +201,7 @@ WinMain(
 
 
   CHAR cmdLine[1000];
-  sprintf(cmdLine, "BF1942.exe %s", argsStart);
+  sprintf(cmdLine, "bf42++.exe %s", argsStart);
 
   STARTUPINFO si = {0};
   ZeroMemory( &si, sizeof(si) );
