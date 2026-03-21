@@ -30,6 +30,8 @@ jobs:
         shared_libs_enabled: ["ON", "OFF"]
 
         config:
+        - { sys: mingw32, env: i686, cc: gcc, cxx: g++ }
+        - { sys: mingw32, env: i686, cc: clang, cxx: clang++ }
         - { sys: mingw64, env: x86_64, cc: gcc, cxx: g++ }
         - { sys: mingw64, env: x86_64, cc: clang, cxx: clang++ }
 
