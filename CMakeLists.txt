@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
 
 cmake_policy(SET CMP0091 NEW)
 
-set(TARGET BlackScreen)
+set(TARGET BlackScreen_r)
 project(${TARGET} VERSION 1.0 LANGUAGES C CXX)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
