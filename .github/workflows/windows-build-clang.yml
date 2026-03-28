@@ -3,7 +3,7 @@ name: Build (Windows Clang)
 on:
   push:
     branches:
-      - main
+      - BF1942_r
     paths-ignore:
       - '**/README.md'
       - '.github/workflows/windows-build-msvc.yml'
@@ -11,7 +11,7 @@ on:
 
   pull_request:
     branches:
-      - main
+      - BF1942_r
 
 jobs:
   build-msvc:
