@@ -2,6 +2,10 @@
 
 #include <stdio.h>
 
+#if !defined(TARGET_EXE_NAME)
+  #define TARGET_EXE_NAME "BF1942.exe"
+#endif
+
 
 //
 // BlackScreen: 0x400
@@ -201,7 +205,7 @@ WinMain(
 
 
   CHAR cmdLine[1000];
-  sprintf(cmdLine, "BF1942.exe %s", argsStart);
+  sprintf(cmdLine, TARGET_EXE_NAME " %s", argsStart);
 
   STARTUPINFO si = {0};
   ZeroMemory( &si, sizeof(si) );

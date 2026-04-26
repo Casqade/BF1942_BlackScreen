@@ -7,6 +7,8 @@ project(${TARGET} VERSION 1.0 LANGUAGES C CXX)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 
+set(BLACKSCREEN_TARGET_EXE_NAME "BF1942.exe" CACHE STRING "Target executable name for BlackScreen")
+
 add_executable( ${TARGET} WIN32
   BlackScreen.cpp
 )
@@ -14,6 +16,7 @@ add_executable( ${TARGET} WIN32
 target_compile_definitions( ${TARGET} PUBLIC
   NOMINMAX
   WIN32_LEAN_AND_MEAN
+  TARGET_EXE_NAME="${BLACKSCREEN_TARGET_EXE_NAME}"
 )
 
 set_target_properties( ${TARGET} PROPERTIES
